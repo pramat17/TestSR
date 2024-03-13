@@ -28,3 +28,4 @@ jobs:
         with:
           branch: gh-pages  # Le nom de la branche où le build sera déployé
           folder: build  # Le dossier à déployer
+          token: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }} 

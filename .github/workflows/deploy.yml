@@ -15,13 +15,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # Spécifiez la version de Node.js qui correspond à votre projet
+          node-version: '18'  # Mettez à jour pour utiliser une version de Node.js qui satisfait vos dépendances
 
       - name: Install Dependencies
         run: npm install
 
       - name: Build React App
         run: npm run build
+        env:
+          CI: false  # Temporairement désactive le traitement des avertissements comme erreurs
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

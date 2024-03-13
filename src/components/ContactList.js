@@ -8,7 +8,7 @@ const initialContacts = [
 ];
 
 const ContactList = ({ onSelectContact }) => {
-    const [contacts, setContacts] = useState(initialContacts);
+    const [contacts] = useState(initialContacts);
     const [searchTerm, setSearchTerm] = useState('');
 
     const filteredContacts = contacts.filter(contact =>

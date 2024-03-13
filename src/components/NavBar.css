@@ -1,0 +1,64 @@
+/* NavBar.css */
+.navbar {
+    background-color: #333; /* Fond noir pour plus d'élégance */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around; /* Modifié pour répartir l'espace */
+    align-items: center; /* Centre verticalement */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Ombre pour la profondeur */
+}
+
+.nav-logo, .nav-items, .deconnexion {
+    display: flex;
+    align-items: center; /* Assure que tout est centré verticalement */
+    justify-content: center; /* Centre horizontalement le contenu de chaque bloc */
+}
+
+.nav-items {
+    flex-grow: 1; /* Permet aux éléments de navigation de remplir l'espace */
+    justify-content: space-evenly; /* Répartit uniformément les liens de navigation */
+}
+
+.nav-items a {
+    color: #FFD700; /* Jaune vif pour les liens */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out; /* Transition douce */
+}
+
+.nav-items a:hover, .nav-items a.active {
+    color: #fff; /* Changement de couleur au survol et pour le lien actif */
+    border-bottom: 2px solid #FFD700; /* Soulignement au survol et pour le lien actif */
+}
+
+.deconnexion {
+    background-color: #FFD700; /* Bouton jaune */
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out; /* Transition pour l'interaction */
+}
+
+.deconnexion:hover {
+    background-color: #e6c300; /* Jaune un peu plus foncé pour l'interaction */
+}
+
+.logo-img {
+    width: 80px; /* Taille du logo */
+    height: auto; /* Maintient le ratio */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-items {
+        flex-direction: column;
+    }
+    .nav-items a {
+        margin: 10px 0; /* Ajuste l'espacement pour les écrans plus petits */
+    }
+}

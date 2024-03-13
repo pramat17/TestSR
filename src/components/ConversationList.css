@@ -1,0 +1,105 @@
+/* ConversationList.css */
+.conversation-list {
+    background-color: #1a1a1a; /* Couleur de fond sombre */
+    width: 350px;
+    height: 100vh;
+    overflow-y: auto; /* Permettre le défilement */
+    padding: 10px 0; /* Espacement vertical */
+}
+
+.conversation-preview {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px; /* Arrondir les coins pour un aspect plus doux */
+    margin: 5px 10px; /* Espacement entre les conversations */
+    background-color: #2c2c2c; /* Couleur de fond par défaut pour chaque conversation */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animation pour le survol */
+    cursor: pointer;
+}
+
+.conversation-preview:hover, .conversation-preview.active {
+    background-color: #ffd700; /* Fond jaune pour la conversation active ou au survol */
+    transform: translateX(5px); /* Déplacement léger à droite pour dynamisme */
+    color: black;
+}
+
+.conversation-preview:hover .last-message, .conversation-preview.active .last-message {
+    color: black; /* Assurer que le texte reste lisible sur fond jaune */
+}
+
+.avatar {
+    width: 50px; /* Taille de l'avatar */
+    height: 50px; /* Garantir un cercle parfait */
+    border-radius: 50%; /* Rendre l'avatar circulaire */
+    margin-right: 15px; /* Espacement entre l'avatar et les détails de la conversation */
+}
+
+.conversation-details {
+    flex-grow: 1;
+}
+
+h4, .last-message {
+    margin: 0;
+}
+
+h4 {
+    font-size: 1rem;
+    color: #fff; /* Titre en blanc */
+}
+
+.last-message {
+    font-size: 0.85rem;
+    color: #bbb; /* Message en gris pour moins d'importance */
+}
+
+.unread-badge {
+    background-color: #ff8800; /* Un jaune-orangé pour rester dans le thème et pour plus de visibilité */
+    min-width: 20px; /* Assurer une taille minimum pour le badge */
+    color: white; /* Texte blanc pour contraste */
+    padding: 2px 6px;
+    border-radius: 15px; /* Arrondir les bords du badge */
+    font-size: 0.75rem;
+    height: fit-content;
+    margin-left: 10px; /* Espacement entre le texte et le badge */
+}
+/* ConversationList.css */
+.conversation-list-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #444; /* Séparation visuelle */
+}
+
+.conversation-search {
+    flex-grow: 1;
+    padding: 8px 15px;
+    border-radius: 20px; /* Bordures arrondies pour le champ de recherche */
+    border: 1px solid #555; /* Bordure subtile */
+    background-color: #333; /* Fond légèrement différent */
+    color: white; /* Texte en blanc */
+    margin-right: 10px; /* Espace entre la recherche et le bouton de création */
+}
+
+.create-conversation-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd700; /* Jaune pour correspondre au thème */
+    border-radius: 50%; /* Cercle parfait */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Effet de survol */
+}
+
+.create-conversation-btn:hover {
+    background-color: #e6c300; /* Foncer le jaune au survol */
+}
+
+.create-conversation-btn svg {
+    fill: black; /* Couleur de l'icône Plus */
+    width: 24px; /* Taille de l'icône */
+    height: 24px;
+}
+

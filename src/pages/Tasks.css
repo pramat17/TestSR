@@ -1,0 +1,12 @@
+/* src/pages/Tasks.css */
+.tasks-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.tasks-content {
+    flex-grow: 1;
+    padding: 20px; /* Ajoutez un espacement autour du Kanban Board */
+    background-color: #1a1a1a; /* Arrière-plan cohérent avec le reste de l'application */
+}

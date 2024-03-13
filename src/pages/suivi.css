@@ -1,0 +1,113 @@
+/* Suivi.css */
+.suivi-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #121212; /* Utiliser un noir profond pour le fond */
+    color: #FFFFFF; /* Assurer un contraste élevé pour la lisibilité */
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px; /* Augmenter l'espacement */
+}
+
+h1 {
+    color: #FFD700; /* Conserver le jaune pour le titre */
+    margin-bottom: 32px; /* Espacement plus généreux */
+    font-size: 2.5rem; /* Taille de police plus grande */
+}
+
+/* Améliorations du container du graphique */
+.chart-container {
+    background-color: #222; /* Fond plus foncé pour contraster avec le noir de l'arrière-plan */
+    padding: 30px;
+    border-radius: 15px; /* Bords plus arrondis */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Ombre plus prononcée pour un effet de profondeur */
+    margin: 20px 0; /* Ajouter un espacement vertical */
+    width: auto; /* Adapter la largeur au contenu */
+    max-width: 80%; /* Limiter la largeur maximale pour les grands écrans */
+}
+/* Suivi.css */
+.suivi-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #121212; /* Utiliser un noir profond pour le fond */
+    color: #FFFFFF; /* Assurer un contraste élevé pour la lisibilité */
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px; /* Augmenter l'espacement */
+}
+
+h1 {
+    color: #FFD700; /* Conserver le jaune pour le titre */
+    margin-bottom: 32px; /* Espacement plus généreux */
+    font-size: 2.5rem; /* Taille de police plus grande */
+}
+
+/* Styles pour le conteneur du graphique */
+.chart-container {
+    background-color: #222; /* Fond sombre pour contraste */
+    padding: 30px; /* Espacement interne */
+    border-radius: 15px; /* Arrondissement des bords */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Ombre pour profondeur */
+    width: auto; /* Adaptation à la largeur du contenu */
+    max-width: 90%; /* Limite de largeur pour grandes résolutions */
+    margin: 40px 0; /* Espacement vertical */
+    display: flex; /* Flexibilité de disposition */
+    flex-direction: column; /* Orientation verticale */
+    align-items: center; /* Centrage horizontal */
+}
+
+/* Améliorer les entrées de valeur dans InteractiveChart.css ou suivi.css si les styles sont globaux */
+input[type="number"] {
+    background-color: #333; /* Un fond plus sombre pour distinguer l'entrée */
+    color: #FFD700; /* Texte jaune pour rester dans le thème */
+    border: 1px solid #FFD700; /* Ajouter une bordure subtile */
+    padding: 12px 20px; /* Augmenter l'espacement interne */
+    border-radius: 5px; /* Bords arrondis */
+    margin: 0 10px; /* Espacement autour des champs */
+    width: 80px; /* Fixer une largeur pour uniformiser les champs d'entrée */
+    text-align: center; /* Centrer le texte à l'intérieur */
+}
+
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #FFD700 inset; /* Focus avec un style plus prononcé */
+}
+/* Masquer les flèches des inputs de type nombre */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Pour Chrome, Safari */
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Pour Firefox */
+}
+
+/* Améliorations des champs d'entrée */
+input[type="number"] {
+    background-color: #333; /* Fond sombre */
+    color: #FFD700; /* Texte jaune */
+    border: 1px solid #FFD700; /* Bordure subtile */
+    padding: 12px 20px; /* Espacement interne confortable */
+    border-radius: 5px; /* Bords arrondis */
+    margin: 10px; /* Espacement externe */
+    width: 100px; /* Largeur fixe pour uniformité */
+    text-align: center; /* Texte centré */
+}
+
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #FFD700 inset; /* Focus distinct */
+}

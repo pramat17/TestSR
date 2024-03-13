@@ -1,0 +1,30 @@
+/* InteractiveChart.css */
+.interactive-chart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.interactive-chart-input {
+    margin-bottom: 10px;
+}
+
+.interactive-chart-input label {
+    margin-right: 10px;
+}
+.radar-chart-container {
+    max-width: 600px; /* ou toute autre taille appropriée */
+    max-height: 400px; /* Ajustez en fonction de vos besoins */
+    margin: auto;
+}
+/* Exemple de style pour la boîte du graphique */
+.chart-container {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+

@@ -1,0 +1,27 @@
+/* Conversation.css */
+.message {
+    margin: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+.received {
+    background-color: #222;
+    align-self: flex-start; /* Alignement à gauche */
+}
+
+.sent {
+    background-color: #ffd700; /* Message envoyé en jaune */
+    align-self: flex-end; /* Alignement à droite */
+    color: white; /* Texte en noir pour le contraste */
+}
+
+.message-input {
+    margin-top: auto; /* S'assure que l'input est en bas */
+    padding: 1rem;
+    background-color: #333;
+    border: none;
+    border-top: 2px solid #333; /* Séparateur */
+}

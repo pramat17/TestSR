@@ -1,0 +1,63 @@
+/* MessageInput.css */
+.message-input {
+    background-color: #222; /* Arrière-plan de la zone de saisie */
+    padding: 1rem; /* Espacement interne */
+    display: flex; /* Disposition flexible pour input et bouton */
+    align-items: center; /* Centrer les éléments verticalement */
+}
+
+.message-input input {
+    flex: 1; /* L'input prend le reste de l'espace */
+    padding: 0.5rem 1rem; /* Padding confortable pour la saisie */
+    margin-right: 0.5rem; /* Espace entre l'input et le bouton */
+    border-radius: 20px; /* Bords arrondis pour l'input */
+    border: 1px solid #444; /* Bordure subtile */
+    background-color: #333; /* Arrière-plan plus sombre pour l'input */
+    color: white; /* Texte en blanc */
+    font-size: 1rem; /* Taille de texte appropriée */
+}
+
+.message-input button {
+    padding: 0.5rem 1rem; /* Padding confortable pour le bouton */
+    border-radius: 20px; /* Bords arrondis pour le bouton */
+    border: none; /* Aucune bordure pour le bouton */
+    background-color: #ffd700; /* Arrière-plan jaune pour le bouton */
+    color: black; /* Texte en noir pour le bouton */
+    cursor: pointer; /* Pointeur de souris pour l'interaction */
+    transition: background-color 0.2s; /* Transition en douceur pour l'interaction */
+}
+
+.message-input button:hover {
+    background-color: #e6c300; /* Changement de couleur pour l'interaction */
+}/* MessageInput.css */
+.message-input {
+    background-color: #222; /* Arrière-plan de la zone de saisie */
+    padding: 1rem; /* Espacement interne */
+    display: flex; /* Disposition flexible pour input et bouton */
+    align-items: center; /* Centrer les éléments verticalement */
+}
+
+.message-input input {
+    flex: 1; /* L'input prend le reste de l'espace */
+    padding: 0.5rem 1rem; /* Padding confortable pour la saisie */
+    margin-right: 0.5rem; /* Espace entre l'input et le bouton */
+    border-radius: 20px; /* Bords arrondis pour l'input */
+    border: 1px solid #444; /* Bordure subtile */
+    background-color: #333; /* Arrière-plan plus sombre pour l'input */
+    color: white; /* Texte en blanc */
+    font-size: 1rem; /* Taille de texte appropriée */
+}
+
+.message-input button {
+    padding: 0.5rem 1rem; /* Padding confortable pour le bouton */
+    border-radius: 20px; /* Bords arrondis pour le bouton */
+    border: none; /* Aucune bordure pour le bouton */
+    background-color: #ffd700; /* Arrière-plan jaune pour le bouton */
+    color: black; /* Texte en noir pour le bouton */
+    cursor: pointer; /* Pointeur de souris pour l'interaction */
+    transition: background-color 0.2s; /* Transition en douceur pour l'interaction */
+}
+
+.message-input button:hover {
+    background-color: #e6c300; /* Changement de couleur pour l'interaction */
+}

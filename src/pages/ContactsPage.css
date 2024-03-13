@@ -1,0 +1,20 @@
+/* ContactsPage.css */
+.contacts-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: black; /* Si vous voulez que le fond de la page entière soit noir */
+}
+
+.contacts-content {
+    display: flex;
+    height: calc(100vh - 120px); /* Ajustez selon la hauteur de votre NavBar et Footer */
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    overflow: hidden; /* Contient les enfants sans laisser de défilement externe */
+}
+
+.contact-list, .contact-details {
+    overflow-y: auto; /* Permet un défilement indépendant pour la liste et les détails */
+}

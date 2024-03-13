@@ -1,0 +1,59 @@
+/* MessagingApp.css */
+.messaging-page {
+    display: flex;
+    height: calc(100vh - 50px); /* Ajustement pour l'en-tête ou le pied de page */
+    background-color: #121212; /* Fond général sombre */
+    color: #FFFFFF; /* Texte en blanc pour contraste */
+    overflow: hidden; /* Évite le défilement sur la page */
+    border-radius: 10px; /* Coins arrondis pour le conteneur principal */
+    margin: 25px; /* Marge pour le détacher du reste de la page */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Ombre pour un effet de profondeur */
+}
+
+.conversation-list {
+    width: 30%;
+    height: 100%;
+    overflow-y: auto; /* Défilement pour la liste des conversations */
+    border-right: 2px solid #444; /* Séparateur */
+    border-top-left-radius: 10px; /* Arrondi en haut à gauche */
+    border-bottom-left-radius: 10px; /* Arrondi en bas à gauche */
+}
+
+.conversation-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid white; /* Bordure blanche de séparation */
+    background-color: #1a1a1a; /* Fond sombre pour le contenu de la conversation */
+    border-top-right-radius: 10px; /* Arrondi en haut à droite */
+    border-bottom-right-radius: 10px; /* Arrondi en bas à droite */
+}
+
+.conversation {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 20px; /* Espace interne pour le contenu */
+    border-bottom: 2px solid white; /* Bordure inférieure */
+}
+
+.no-conversation-selected {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem; /* Taille de police ajustée */
+    color: #fff; /* Contraste de couleur */
+}
+
+.message-input {
+    background-color: #2c2c2c; /* Fond pour la zone de saisie */
+    padding: 12px 20px; /* Confort de saisie */
+    border-top: 2px solid white; /* Séparation nette */
+    border-bottom-right-radius: 8px; /* Arrondi pour le champ de saisie */
+    border-bottom-left-radius: 8px; /* Cohérence des arrondis */
+}
+
+body{
+    background-color:black;
+}

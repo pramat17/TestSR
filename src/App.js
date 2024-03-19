@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from "./components/navBar";
 import Footer from "./components/footer";
 
-// Corrigez l'importation ici pour un export par
+// Corrigez l'importation ici pour un export
 import Suivi from './pages/Suivi';
 import Messagerie from './pages/Messagerie';
 import Tasks from './pages/Tasks';
